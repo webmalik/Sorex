@@ -1,9 +1,13 @@
 {
-	"projectName": "Новий проект",
-	"menuItems": [
-		{
-			"label": "Стартова сторінка",
-			"url": "/"
-		}
-	]
+  "projectName": "Новий проект",
+  "menuItems": [
+    {
+      "label": "Стартова сторінка",
+      "url": "/"
+    },
+    {
+      "label": "Головна",
+      "url": "/main.html"
+    }
+  ]
 }

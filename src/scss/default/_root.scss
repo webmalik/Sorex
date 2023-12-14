@@ -1,3 +1,5 @@
+@import "fontawesome/fontawesome";
+
 html,
 body {
 	height: 100%;
@@ -135,6 +137,24 @@ img {
 	margin: 0 auto;
 }
 
+@include media-width(1700px) {
+	.container {
+		max-width: 1480px;
+	}
+}
+
+@include media-width(1550px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
+@include media-width(1420px) {
+	.container {
+		max-width: 1240px;
+	}
+}
+
 @include media-width(1300px) {
 	.container {
 		max-width: 1050px;
@@ -162,6 +182,6 @@ img {
 @include media-width($sm) {
 	.container {
 		max-width: none;
-		padding: 0 1.25rem;
+		padding: 0 15px;
 	}
 }

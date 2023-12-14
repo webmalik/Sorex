@@ -16,24 +16,22 @@ $lg: 1200px;
 $xl: 1400px;
 
 // Типографіка
-$font-family: "Montserrat";
+$font-family: "Poppins", sans-serif;
 $font-size: 16px;
 $line-height: 1.5;
-$color: #000000;
+$color: #222222;
 
 // Кольори
-$main_color: #080707;
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$white_color: #ffffff;
-$black_color: #000000;
-$silver_color: #151414;
-$border_silver_color: #b8b8b8;
+$main-color: #3f7180;
+$primary-color: #a1d6e2;
+$secondary-color: #ff9134;
+$white_color: #f1f9fb;
+$black_color: #222222;
 
 // Розміщення блоків
-$container-width: 1200px;
+$container-width: 1640px;
 $maxWidth: 1920;
-$maxWidthContainer: 1200;
+$maxWidthContainer: 1640;
 // Анімація
 $transition-duration: 0.2s;
 $hover-transition: all $transition-duration ease-in-out;
