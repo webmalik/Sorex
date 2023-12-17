@@ -1,0 +1,57 @@
+.starke {
+	@include adaptiv-value("margin-top", toPX(180), toPX(30), 1);
+	&__wrapper {
+		background-color: #fff;
+		position: relative;
+		padding: 69px 73px 56px 73px;
+	}
+
+	&__title {
+		@include adaptiv-value("font-size", toPX(40), toPX(24), 1);
+		font-weight: 600;
+		color: $black_color;
+		text-align: center;
+
+		span {
+			color: $secondary-color;
+		}
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		@include adaptiv-value("gap", toPX(80), toPX(12), 1);
+		align-items: center;
+	}
+
+	&__label {
+		position: absolute;
+		right: 0;
+		top: 0;
+		@include adaptiv-value("max-width", toPX(258), toPX(138), 1);
+	}
+
+	&__img {
+	}
+
+	&__content {
+		display: flex;
+		align-items: self-start;
+		flex-direction: column;
+		gap: 88px;
+		@include adaptiv-value("margin-top", toPX(-50), toPX(100), 1);
+	}
+
+	&__text {
+		@include adaptiv-value("font-size", toPX(24), toPX(20), 1);
+		font-weight: 300;
+		color: $black_color;
+	}
+
+	&__button {
+		display: flex;
+		max-width: 275px;
+		width: 100%;
+		margin-left: 0;
+	}
+}

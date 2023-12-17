@@ -1,0 +1,119 @@
+.types {
+	@include adaptiv-value("margin-top", toPX(169), toPX(30), 1);
+
+	&__header {
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		font-weight: 600;
+		color: $black_color;
+		text-align: center;
+		@include adaptiv-value("margin-bottom", toPX(75), toPX(30), 1);
+
+		span {
+			color: $secondary-color;
+		}
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		@include adaptiv-value("gap", toPX(107), toPX(21), 1);
+	}
+
+	&__item {
+		background-color: #a1d7e2;
+		position: relative;
+		border-radius: 25px;
+		overflow: hidden;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@include adaptiv-value("padding-bottom", toPX(69), toPX(20), 1);
+
+		&::after {
+			content: "";
+			display: block;
+			@include adaptiv-value("width", toPX(592), toPX(452), 1);
+			@include adaptiv-value("height", toPX(301), toPX(230), 1);
+			background-image: url("../img/types-bg.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			bottom: 0;
+			right: -150px;
+			opacity: 0.5;
+			z-index: -1;
+		}
+	}
+
+	&__img {
+		max-width: 80%;
+
+		margin: 0 auto;
+		margin-top: 37.2px;
+		flex: 1 1 auto;
+
+		picture,
+		img {
+			height: auto;
+		}
+	}
+
+	&__title {
+		@include adaptiv-value("font-size", toPX(30), toPX(22), 1);
+		font-weight: 600;
+		color: $black_color;
+		@include adaptiv-value("margin-top", toPX(75), toPX(26), 1);
+		@include adaptiv-value("margin-bottom", toPX(28), toPX(10), 1);
+		text-align: center;
+	}
+
+	&__desc {
+		font-size: 20px;
+		text-align: left;
+		font-weight: 300;
+		margin: 0 auto;
+		@include adaptiv-value("margin-bottom", toPX(47), toPX(70), 1);
+		@include adaptiv-value("max-width", toPX(500), toPX(400), 1);
+		//max-width: 500px;
+	}
+
+	&__buttons {
+		max-width: 560px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin: 0 auto;
+		width: 100%;
+		@include adaptiv-value("max-width", toPX(560), toPX(400), 1);
+	}
+
+	&__button {
+		border-color: $black_color;
+		color: $black_color;
+	}
+}
+
+@include media-width($md) {
+	.types {
+		&__wrapper {
+			grid-template-columns: 1fr;
+		}
+		&__item {
+			justify-content: start;
+			&::after {
+				right: -40px;
+				left: -40px;
+				bottom: 115px;
+			}
+		}
+		&__desc {
+			padding: 0 16px;
+			text-align: center;
+		}
+		&__buttons {
+			flex-direction: column;
+			padding: 0 12px;
+		}
+	}
+}

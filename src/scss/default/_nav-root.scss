@@ -1,5 +1,9 @@
+@function toPX($to_rem) {
+	@return $to_rem * 16;
+}
+
 .webmalik {
-	background-color: #152e4d;
+	background-color: #152e4d !important;
 	&__container {
 		display: flex;
 		@include adaptiv-value("gap", toPX(3), toPX(1), 1);
@@ -101,4 +105,8 @@
 			grid-template-columns: 1fr;
 		}
 	}
+}
+
+@function toPX($to_rem) {
+	@return $to_rem * 1;
 }

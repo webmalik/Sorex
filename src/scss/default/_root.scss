@@ -132,7 +132,6 @@ img {
 }
 
 .container {
-	position: relative;
 	max-width: $container-width;
 	margin: 0 auto;
 }
@@ -157,13 +156,19 @@ img {
 
 @include media-width(1300px) {
 	.container {
+		max-width: 1200px;
+	}
+}
+
+@include media-width(1200px) {
+	.container {
 		max-width: 1050px;
 	}
 }
 
-@include media-width(1100px) {
+@include media-width(1080px) {
 	.container {
-		max-width: 920px;
+		max-width: 992px;
 	}
 }
 

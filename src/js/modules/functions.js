@@ -1,4 +1,12 @@
 import $ from "jquery";
+import Swiper from "swiper";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 
 export function burgerMenu() {
 	const burger = document.querySelector('.header__burger');
@@ -11,6 +19,59 @@ export function burgerMenu() {
 		body.classList.toggle('lock');
 	});
 
+	const links = document.querySelectorAll('.menu__drop');
+
+	links.forEach(link => {
+		link.addEventListener('click', (e) => {
+			e.preventDefault();
+
+			links.forEach(otherLink => {
+				if (otherLink !== link) {
+					otherLink.classList.remove('active');
+					otherLink.nextElementSibling.classList.remove('active');
+				}
+			});
+
+			link.classList.toggle('active');
+			link.nextElementSibling.classList.toggle('active');
+		});
+	});
+
+}
+
+export function prodSliderMobile() {
+	const slider = document.querySelector('.products__slider');
+
+	if (slider) {
+		const wrapper = document.querySelector('.products__wrapper');
+		const slides = document.querySelectorAll('.products__item');
+
+		if (window.innerWidth < 992) {
+			slider.classList.add('swiper');
+			wrapper.classList.add('swiper-wrapper');
+
+			slides.forEach(slide => {
+				slide.classList.add('swiper-slide');
+			})
+
+			productsSwiper = new Swiper(slider, {
+				loop: true,
+				modules: [Pagination, Navigation],
+				spaceBetween: 10,
+				slidesPerView: 1,
+				navigation: {
+					nextEl: '.products__next',
+					prevEl: '.products__prev',
+				},
+				pagination: {
+					el: '.products__paginations',
+					clickable: true,
+					dynamicBullets: true,
+					dynamicMainBullets: 4,
+				},
+			});
+		}
+	}
 }
 
 export function accordion(mode = true) {
