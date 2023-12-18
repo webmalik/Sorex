@@ -1,0 +1,56 @@
+.footer {
+	&__icons {
+		@include adaptiv-value("padding-top", toPX(60), toPX(37), 1);
+		@include adaptiv-value("padding-bottom", toPX(82), toPX(71), 1);
+		background-color: #fff;
+	}
+}
+.icons {
+	&__title {
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		font-weight: normal;
+		font-style: normal;
+		text-align: center;
+		color: #222222;
+		@include adaptiv-value("padding-left", toPX(0), toPX(78), 1);
+		@include adaptiv-value("padding-right", toPX(0), toPX(78), 1);
+
+		span {
+			color: $secondary-color;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include adaptiv-value("margin-top", toPX(106), toPX(62), 1);
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		@include adaptiv-value("gap", toPX(37), toPX(30), 1);
+		i {
+			@include adaptiv-value("font-size", toPX(78), toPX(45), 1);
+			color: #ff9234;
+			text-align: center;
+			font-weight: 100;
+		}
+		span {
+			@include adaptiv-value("font-size", toPX(24), toPX(20), 1);
+			font-weight: 300;
+			font-style: normal;
+			text-align: center;
+			color: #222222;
+		}
+	}
+}
+@include media-width($md) {
+	.icons {
+		&__wrapper {
+			flex-direction: column;
+			gap: 42px;
+		}
+	}
+}

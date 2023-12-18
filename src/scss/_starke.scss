@@ -4,6 +4,7 @@
 		background-color: #fff;
 		position: relative;
 		padding: 69px 73px 56px 73px;
+		border-radius: 25px;
 	}
 
 	&__title {
@@ -53,5 +54,31 @@
 		max-width: 275px;
 		width: 100%;
 		margin-left: 0;
+	}
+}
+
+@include media-width($md) {
+	.starke {
+		&__wrapper {
+			padding: 100px 16px 0;
+		}
+		&__inner {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		&__title {
+			text-align: left;
+		}
+
+		&__content {
+			margin-top: 28px;
+			gap: 50px;
+		}
+
+		&__button {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 }

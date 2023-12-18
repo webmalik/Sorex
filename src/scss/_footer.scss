@@ -1,0 +1,96 @@
+.footer {
+	&__main {
+		background-color: #3f7180;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr 2fr;
+		@include adaptiv-value("padding-top", toPX(58), toPX(35), 1);
+		@include adaptiv-value("padding-bottom", toPX(39), toPX(30), 1);
+	}
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 100%;
+		margin-left: 0;
+
+		img {
+			@include adaptiv-value("max-width", toPX(434), toPX(311), 1);
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__address {
+		@include adaptiv-value("font-size", toPX(20), toPX(15), 1);
+		font-weight: 300;
+		font-style: normal;
+		text-align: left;
+		color: #ffffff;
+		line-height: 130%;
+		width: 100%;
+	}
+
+	&__copy {
+		@include adaptiv-value("font-size", toPX(20), toPX(15), 1);
+		font-weight: 300;
+		font-style: normal;
+		text-align: left;
+		color: #ffffff;
+		width: 100%;
+	}
+
+	&__label {
+	}
+
+	&__up {
+		svg text {
+			font-size: 42px;
+			text-align: center;
+		}
+	}
+
+	&__social {
+	}
+
+	&__title {
+		@include adaptiv-value("font-size", toPX(31), toPX(18), 1);
+		font-weight: normal;
+		font-style: normal;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	&__social-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include adaptiv-value("margin-top", toPX(26), toPX(23), 1);
+
+		i {
+			@include adaptiv-value("font-size", toPX(50), toPX(33), 1);
+		}
+	}
+
+	&__nav {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		gap: 15px 100px;
+
+		a {
+			@include adaptiv-value("font-size", toPX(20), toPX(15), 1);
+			font-weight: 300;
+			font-style: normal;
+			text-align: left;
+			color: #ffffff;
+		}
+	}
+}
