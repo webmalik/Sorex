@@ -190,3 +190,65 @@ img {
 		padding: 0 15px;
 	}
 }
+
+.desctop {
+	display: flex;
+}
+
+.mobile {
+	display: none;
+}
+
+@include media-width($md) {
+	.desctop {
+		display: none;
+	}
+
+	.mobile {
+		display: flex;
+	}
+}
+
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	@include adaptiv-value("margin-top", toPX(119), toPX(10), 1);
+	@include adaptiv-value("margin-bottom", toPX(20), toPX(34), 1);
+
+	a {
+		@include adaptiv-value("font-size", toPX(20), toPX(12), 1);
+		padding-right: 2pt;
+
+		&::after {
+			content: "/";
+			padding-left: 2pt;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.button {
+	padding: 12px 0 12px 0;
+	border: 1px solid $main-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include adaptiv-value("gap", 35, 10, 1);
+	color: $main-color;
+	font-size: 20px;
+	border-radius: 9px;
+	width: 100%;
+	line-height: 27px;
+	cursor: pointer;
+
+	&.active {
+		color: #fff;
+		border: 1px solid $secondary-color;
+		background-color: $secondary-color;
+	}
+}

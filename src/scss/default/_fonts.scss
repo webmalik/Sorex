@@ -22,6 +22,20 @@
 @font-face {
 	font-family: 'fa';
 	font-display: swap;
+	src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
+	font-weight: light;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'fa';
+	font-display: swap;
+	src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
+	font-weight: light;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'fa';
+	font-display: swap;
 	src: url("../fonts/fa-duotone-900.woff") format("woff"), url("../fonts/fa-duotone-900.woff2") format("woff2");
 	font-weight: duotone;
 	font-style: normal;
@@ -29,8 +43,8 @@
 @font-face {
 	font-family: 'fa';
 	font-display: swap;
-	src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-	font-weight: light;
+	src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
+	font-weight: regular;
 	font-style: normal;
 }
 @font-face {
@@ -50,28 +64,7 @@
 @font-face {
 	font-family: 'fa';
 	font-display: swap;
-	src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
-	font-weight: regular;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'fa';
-	font-display: swap;
-	src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-	font-weight: light;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'fa';
-	font-display: swap;
 	src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
-	font-weight: sharp;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'fa';
-	font-display: swap;
-	src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
 	font-weight: sharp;
 	font-style: normal;
 }
@@ -92,14 +85,14 @@
 @font-face {
 	font-family: 'fa';
 	font-display: swap;
-	src: url("../fonts/fa-sharp-solid-900.woff") format("woff"), url("../fonts/fa-sharp-solid-900.woff2") format("woff2");
+	src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
 	font-weight: sharp;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'fa';
 	font-display: swap;
-	src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
+	src: url("../fonts/fa-sharp-solid-900.woff") format("woff"), url("../fonts/fa-sharp-solid-900.woff2") format("woff2");
 	font-weight: sharp;
 	font-style: normal;
 }
@@ -115,6 +108,13 @@
 	font-display: swap;
 	src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
 	font-weight: solid;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'fa';
+	font-display: swap;
+	src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
+	font-weight: sharp;
 	font-style: normal;
 }
 @font-face {

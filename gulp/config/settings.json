@@ -8,6 +8,10 @@
     {
       "label": "Головна",
       "url": "/main.html"
+    },
+    {
+      "label": "Privat",
+      "url": "/privat.html"
     }
   ]
 }

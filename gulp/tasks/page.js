@@ -32,7 +32,7 @@ export const page = () => {
 	const name = argv.name || 'Головна сторінка'
 	const content = pageContent.replace('{filename}', fileName).replace('{name}', name);
 	const section = sectionContent.replace('{filename}', fileName)
-	const importStatement = "@import \"" + fileName + "\";\n"
+	const importStatement = "@import \"_" + fileName + "\";\n"
 	const settingsPath = './gulp/config/settings.json';
 	console.log(settingsPath)
 	const settingsData = JSON.parse(fs.readFileSync(settingsPath, 'utf-8'));

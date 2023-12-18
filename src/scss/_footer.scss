@@ -36,6 +36,8 @@
 		color: #ffffff;
 		line-height: 130%;
 		width: 100%;
+		@include adaptiv-value("margin-top", toPX(40), toPX(45), 1);
+		@include adaptiv-value("margin-bottom", toPX(70), toPX(45), 1);
 	}
 
 	&__copy {
@@ -48,6 +50,7 @@
 	}
 
 	&__label {
+		@include adaptiv-value("max-width", toPX(137), toPX(117), 1);
 	}
 
 	&__up {
@@ -74,8 +77,8 @@
 		align-items: center;
 		@include adaptiv-value("margin-top", toPX(26), toPX(23), 1);
 
-		i {
-			@include adaptiv-value("font-size", toPX(50), toPX(33), 1);
+		svg {
+			@include adaptiv-value("max-width", toPX(50), toPX(33), 1);
 		}
 	}
 
@@ -91,6 +94,61 @@
 			font-style: normal;
 			text-align: left;
 			color: #ffffff;
+		}
+	}
+
+	&__mobile {
+		display: none;
+	}
+	&__desctop {
+		display: flex;
+	}
+}
+
+@include media-width($md) {
+	.footer {
+		&__mobile {
+			display: flex;
+		}
+		&__desctop {
+			display: none;
+		}
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__copy {
+			text-align: center;
+		}
+
+		&__address {
+			text-align: center;
+		}
+
+		&__last {
+			flex-direction: column-reverse;
+		}
+
+		&__nav {
+			grid-template-columns: 2fr 1fr;
+			margin-bottom: 38px;
+			gap: 18px 20px;
+		}
+
+		&__social-wrapper {
+			margin-bottom: 42px;
+		}
+
+		&__label {
+			margin-bottom: 44px;
+		}
+
+		&__logo {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
 		}
 	}
 }
