@@ -280,7 +280,7 @@ export function pageNav() {
 
 			const targetId = $(this).attr('href');
 			const targetElement = $(`${targetId}:first`);
-			const targetOffset = targetElement.offset().top - 100;
+			const targetOffset = targetElement.offset().top;
 			$('html, body').animate({
 				scrollTop: targetOffset
 			}, 800);
@@ -324,6 +324,19 @@ export function inputPassword() {
 				}
 				wrapper.classList.toggle('active')
 			})
+		});
+	}
+}
+
+export function newMob() {
+	const newHeader = document.querySelector('.new__header');
+
+	if (newHeader) {
+		const newWrapper = document.querySelector('.new__wrapper');
+
+		newHeader.addEventListener('click', () => {
+			newHeader.classList.toggle('active');
+			newWrapper.classList.toggle('active');
 		});
 	}
 }

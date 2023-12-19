@@ -267,20 +267,6 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
-  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
   src: url("../fonts/fa-duotone-900.woff") format("woff"), url("../fonts/fa-duotone-900.woff2") format("woff2");
   font-weight: duotone;
   font-style: normal;
@@ -295,6 +281,34 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
+  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
+  font-weight: sharp;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
+  font-weight: sharp;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
   src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
   font-weight: regular;
   font-style: normal;
@@ -309,27 +323,6 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
-  src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-solid-900.woff") format("woff"), url("../fonts/fa-sharp-solid-900.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
   src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
   font-weight: sharp;
   font-style: normal;
@@ -351,14 +344,7 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
-  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
-  font-weight: solid;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
+  src: url("../fonts/fa-sharp-solid-900.woff") format("woff"), url("../fonts/fa-sharp-solid-900.woff2") format("woff2");
   font-weight: sharp;
   font-style: normal;
 }
@@ -372,8 +358,8 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
-  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
-  font-weight: thin;
+  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
+  font-weight: solid;
   font-style: normal;
 }
 @font-face {
@@ -388,6 +374,13 @@ meter {
   font-display: swap;
   src: url("../fonts/fa-v4compatibility.woff") format("woff"), url("../fonts/fa-v4compatibility.woff2") format("woff2");
   font-weight: v4compatibility;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
+  font-weight: thin;
   font-style: normal;
 }
 @font-face {
@@ -412,10 +405,10 @@ meter {
   font-style: normal;
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "fa";
   font-display: swap;
-  src: url("../fonts/Poppins-400.woff") format("woff"), url("../fonts/Poppins-400.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
+  font-weight: sharp;
   font-style: normal;
 }
 @font-face {
@@ -444,6 +437,13 @@ meter {
   font-display: swap;
   src: url("../fonts/Poppins-600.woff") format("woff"), url("../fonts/Poppins-600.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-400.woff") format("woff"), url("../fonts/Poppins-400.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -20791,5 +20791,291 @@ img {
   }
   .households__button svg {
     max-height: 15px;
+  }
+}
+.new {
+  margin-top: 119px;
+  margin-bottom: 143px;
+  border-radius: 25px;
+}
+@media (max-width: 1640px) {
+  .new {
+    margin-top: calc(38px + 81 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new {
+    margin-bottom: calc(60px + 83 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new {
+    border-radius: calc(10px + 15 * ((100vw - 420px) / 1280));
+  }
+}
+.new__inner {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #fff;
+  position: relative;
+  gap: 86px;
+  padding: 28px 40px 42px 26px;
+}
+@media (max-width: 1640px) {
+  .new__inner {
+    border-radius: calc(10px + 15 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__inner {
+    gap: calc(28px + 58 * ((100vw - 420px) / 1280));
+  }
+}
+.new__view {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 90%;
+}
+.new__icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 35px;
+  padding-left: 40px;
+}
+@media (max-width: 1640px) {
+  .new__icons {
+    gap: calc(10px + 6 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__icons {
+    padding-top: calc(0px + 35 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__icons {
+    padding-left: calc(30px + 10 * ((100vw - 420px) / 1280));
+  }
+}
+.new__icons i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #3f7180;
+  padding: 13px 10px;
+  border: 1px solid #3f7180;
+  border-radius: 10px;
+  min-width: 63px;
+  max-height: 63px;
+}
+@media (max-width: 1640px) {
+  .new__icons i {
+    font-size: calc(22px + 14 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__icons i {
+    min-width: calc(40px + 23 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__icons i {
+    max-height: calc(40px + 23 * ((100vw - 420px) / 1280));
+  }
+}
+.new__image {
+  margin-top: 44px;
+}
+@media (max-width: 1640px) {
+  .new__image {
+    margin-top: calc(70px + -26 * ((100vw - 420px) / 1280));
+  }
+}
+.new__content {
+  min-width: 50%;
+}
+.new__title {
+  font-size: 40px;
+  font-weight: 600;
+}
+@media (max-width: 1640px) {
+  .new__title {
+    font-size: calc(30px + 10 * ((100vw - 420px) / 1280));
+  }
+}
+.new__medium {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media (max-width: 1640px) {
+  .new__medium {
+    font-size: calc(20px + 0 * ((100vw - 420px) / 1280));
+  }
+}
+.new__marks {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.new__mark {
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  padding: 5px 8px;
+  font-size: 20px;
+}
+.new__text {
+  margin-top: 24px;
+  margin-bottom: 34px;
+}
+@media (max-width: 1640px) {
+  .new__text {
+    margin-top: calc(15px + 9 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__text {
+    margin-bottom: calc(29px + 5 * ((100vw - 420px) / 1280));
+  }
+}
+.new__regular {
+  font-weight: 400;
+}
+.new__header {
+  border-bottom: 1px solid #222;
+}
+.new__header i {
+  display: none;
+}
+.new__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.new__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+  gap: 25px;
+  padding: 15px 0;
+}
+.new__row:last-child {
+  border: none;
+}
+.new__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.new__buttons {
+  display: flex;
+  margin-top: 45px;
+  gap: 28px;
+}
+@media (max-width: 1640px) {
+  .new__buttons {
+    margin-top: calc(55px + -10 * ((100vw - 420px) / 1280));
+  }
+}
+.new__button {
+  gap: 10px;
+  max-width: 275px;
+}
+.new__label {
+  position: absolute;
+  top: -55px;
+  right: 0px;
+  max-width: 126px;
+}
+@media (max-width: 1640px) {
+  .new__label {
+    top: calc(10px + -65 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__label {
+    right: calc(-15px + 15 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .new__label {
+    max-width: calc(80px + 46 * ((100vw - 420px) / 1280));
+  }
+}
+
+@media (max-width: 992px) {
+  .new {
+    background-color: #fff;
+  }
+  .new__inner {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+  .new__view {
+    padding: 0 20px;
+  }
+  .new__icons {
+    padding: 0;
+    margin-left: -15px;
+  }
+  .new__header {
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .new__header i {
+    display: block;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .new__header i.fa-circle-minus {
+    display: none;
+  }
+  .new__header.active i.fa-circle-minus {
+    display: block;
+  }
+  .new__header.active i.fa-circle-plus {
+    display: none;
+  }
+  .new__wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  .new__wrapper.active {
+    max-height: 1000px;
+    transition: all 0.5s ease-in-out;
+  }
+  .new__row {
+    border: none;
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 0;
+  }
+  .new__row:first-child {
+    border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+  }
+  .new__item {
+    border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+    padding: 10px 0;
+  }
+  .new__item:last-child {
+    border-bottom: none;
+  }
+  .new__buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .new__button {
+    max-width: 100%;
   }
 }

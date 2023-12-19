@@ -1,0 +1,232 @@
+.new {
+	@include adaptiv-value("margin-top", toPX(119), toPX(38), 1);
+	@include adaptiv-value("margin-bottom", toPX(143), toPX(60), 1);
+	@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
+	&__inner {
+		display: flex;
+		align-items: center;
+		@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
+		background-color: #fff;
+		position: relative;
+		@include adaptiv-value("gap", toPX(86), toPX(28), 1);
+		padding: 28px 40px 42px 26px;
+	}
+	&__view {
+		background-image: url("../img/bg.png");
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 90%;
+	}
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		@include adaptiv-value("gap", toPX(16), toPX(10), 1);
+		@include adaptiv-value("padding-top", toPX(35), toPX(0), 1);
+		@include adaptiv-value("padding-left", toPX(40), toPX(30), 1);
+
+		i {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include adaptiv-value("font-size", toPX(36), toPX(22), 1);
+			color: #3f7180;
+			padding: 13px 10px;
+			border: 1px solid #3f7180;
+			border-radius: 10px;
+			@include adaptiv-value("min-width", toPX(63), toPX(40), 1);
+			@include adaptiv-value("max-height", toPX(63), toPX(40), 1);
+		}
+	}
+
+	&__image {
+		@include adaptiv-value("margin-top", toPX(44), toPX(70), 1);
+	}
+
+	&__content {
+		min-width: 50%;
+	}
+
+	&__title {
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		font-weight: 600;
+	}
+
+	&__medium {
+		@include adaptiv-value("font-size", toPX(20), toPX(20), 1);
+		font-weight: 500;
+		//min-width: max-content;
+	}
+
+	&__marks {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+		flex-wrap: wrap;
+		margin-top: 12px;
+	}
+
+	&__mark {
+		border-radius: 25px;
+		background-color: #f4f4f4;
+		padding: 5px 8px;
+		font-size: 20px;
+	}
+
+	&__text {
+		@include adaptiv-value("margin-top", toPX(24), toPX(15), 1);
+		@include adaptiv-value("margin-bottom", toPX(34), toPX(29), 1);
+	}
+
+	&__regular {
+		font-weight: 400;
+	}
+
+	&__table {
+	}
+
+	&__header {
+		border-bottom: 1px solid #222;
+
+		i {
+			display: none;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		//gap: 25px;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 100%;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba($color: #222222, $alpha: 0.5);
+		gap: 25px;
+		padding: 15px 0;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		//width: 100%;
+
+		&:nth-child(2) {
+			//width: 60%;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		@include adaptiv-value("margin-top", toPX(45), toPX(55), 1);
+		gap: 28px;
+	}
+
+	&__button {
+		gap: 10px;
+		max-width: 275px;
+	}
+
+	&__label {
+		position: absolute;
+		@include adaptiv-value("top", toPX(-55), toPX(10), 1);
+		@include adaptiv-value("right", toPX(0), toPX(-15), 1);
+		@include adaptiv-value("max-width", toPX(126), toPX(80), 1);
+	}
+}
+
+@include media-width($md) {
+	.new {
+		background-color: #fff;
+		&__inner {
+			flex-direction: column;
+			padding: 0;
+			padding-top: 40px;
+			padding-bottom: 28px;
+		}
+
+		&__view {
+			padding: 0 20px;
+		}
+
+		&__icons {
+			padding: 0;
+			margin-left: -15px;
+		}
+
+		&__header {
+			padding-bottom: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			i {
+				display: block;
+				font-weight: 300;
+				cursor: pointer;
+			}
+
+			i.fa-circle-minus {
+				display: none;
+			}
+
+			&.active {
+				i.fa-circle-minus {
+					display: block;
+				}
+
+				i.fa-circle-plus {
+					display: none;
+				}
+			}
+		}
+
+		&__wrapper {
+			max-height: 0;
+			overflow: hidden;
+			transition: all 0.5s ease-in-out;
+
+			&.active {
+				max-height: 1000px;
+				transition: all 0.5s ease-in-out;
+			}
+		}
+
+		&__row {
+			border: none;
+			grid-template-columns: 1fr;
+			padding: 0;
+			gap: 0;
+
+			&:first-child {
+				border-bottom: 1px solid rgba($color: #222222, $alpha: 0.5);
+			}
+		}
+
+		&__item {
+			border-bottom: 1px solid rgba($color: #222222, $alpha: 0.5);
+			padding: 10px 0;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		&__buttons {
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		&__button {
+			max-width: 100%;
+		}
+	}
+}

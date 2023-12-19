@@ -10,3 +10,5 @@ wmFunctions.prodSliderMobile();
 const households = document.querySelector('.households');
 
 wmFunctions.tabs(households);
+wmFunctions.pageNav();
+wmFunctions.newMob();
