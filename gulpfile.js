@@ -31,18 +31,21 @@ function watcher() {
 	gulp.watch(path.watch.scss, scss);
 	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.images, images);
-	gulp.watch(path.buildFolder, docs);
+	gulp.watch(path.buildFolder);
+	//gulp.watch(path.buildFolder, docs);
 }
 
 export { svgSprites }
 
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
-const mainTasks = gulp.series(fonts, gulp.parallel(html, copy, scss, js, images, docs));
+const mainTasks = gulp.series(fonts, gulp.parallel(html, copy, scss, js, images));
+//const mainTasks = gulp.series(fonts, gulp.parallel(html, copy, scss, js, images, docs));
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
-const build = gulp.series(reset, mainTasks, docs);
+const build = gulp.series(reset, mainTasks);
+//const build = gulp.series(reset, mainTasks, docs);
 
 const deployZIP = gulp.series(reset, mainTasks, zip);
 

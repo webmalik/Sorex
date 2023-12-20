@@ -274,6 +274,20 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
+  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
   src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
   font-weight: regular;
   font-style: normal;
@@ -281,42 +295,21 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
-  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
   src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
   font-weight: sharp;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
+  font-weight: regular;
   font-style: normal;
 }
 @font-face {
   font-family: "fa";
   font-display: swap;
   src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
-  font-weight: regular;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
   font-weight: sharp;
   font-style: normal;
 }
@@ -344,43 +337,64 @@ meter {
 @font-face {
   font-family: "fa";
   font-display: swap;
+  src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
+  font-weight: sharp;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
+  font-weight: sharp;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
+  font-weight: solid;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
+  font-weight: thin;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
+  font-weight: solid;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-v4compatibility.woff") format("woff"), url("../fonts/fa-v4compatibility.woff2") format("woff2");
+  font-weight: v4compatibility;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
+  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
+  font-weight: thin;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fa";
+  font-display: swap;
   src: url("../fonts/fa-sharp-solid-900.woff") format("woff"), url("../fonts/fa-sharp-solid-900.woff2") format("woff2");
   font-weight: sharp;
   font-style: normal;
 }
 @font-face {
-  font-family: "fa";
+  font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
-  font-weight: solid;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
-  font-weight: solid;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
-  font-weight: thin;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-v4compatibility.woff") format("woff"), url("../fonts/fa-v4compatibility.woff2") format("woff2");
-  font-weight: v4compatibility;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
-  font-weight: thin;
+  src: url("../fonts/Poppins-300.woff") format("woff"), url("../fonts/Poppins-300.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -393,8 +407,8 @@ meter {
 @font-face {
   font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/Poppins-300.woff") format("woff"), url("../fonts/Poppins-300.woff2") format("woff2");
-  font-weight: 300;
+  src: url("../fonts/Poppins-400.woff") format("woff"), url("../fonts/Poppins-400.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -402,13 +416,6 @@ meter {
   font-display: swap;
   src: url("../fonts/Poppins-300.woff") format("woff"), url("../fonts/Poppins-300.woff2") format("woff2");
   font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
-  font-weight: sharp;
   font-style: normal;
 }
 @font-face {
@@ -437,13 +444,6 @@ meter {
   font-display: swap;
   src: url("../fonts/Poppins-600.woff") format("woff"), url("../fonts/Poppins-600.woff2") format("woff2");
   font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  font-display: swap;
-  src: url("../fonts/Poppins-400.woff") format("woff"), url("../fonts/Poppins-400.woff2") format("woff2");
-  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -21077,5 +21077,143 @@ img {
   }
   .new__button {
     max-width: 100%;
+  }
+}
+.pass {
+  margin-bottom: 200px;
+}
+@media (max-width: 1640px) {
+  .pass {
+    margin-bottom: calc(122px + 78 * ((100vw - 420px) / 1280));
+  }
+}
+.pass__header {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 150px;
+}
+@media (max-width: 1640px) {
+  .pass__header {
+    font-size: calc(30px + 10 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .pass__header {
+    margin-bottom: calc(150px + 0 * ((100vw - 420px) / 1280));
+  }
+}
+.pass__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+}
+.pass__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #fff;
+  border-radius: 25px;
+  padding: 35px 31px;
+}
+@media (max-width: 1640px) {
+  .pass__item {
+    border-radius: calc(10px + 15 * ((100vw - 420px) / 1280));
+  }
+}
+.pass__image {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: -50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+.pass__image img {
+  height: auto;
+}
+.pass__desc {
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+@media (max-width: 1640px) {
+  .pass__desc {
+    font-size: calc(18px + 0 * ((100vw - 420px) / 1280));
+  }
+}
+@media (max-width: 1640px) {
+  .pass__desc {
+    margin-bottom: calc(13px + 0 * ((100vw - 420px) / 1280));
+  }
+}
+.pass__title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 35px;
+  margin-bottom: 13px;
+}
+@media (max-width: 1640px) {
+  .pass__title {
+    margin-bottom: calc(13px + 0 * ((100vw - 420px) / 1280));
+  }
+}
+.pass__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+@media (max-width: 1640px) {
+  .pass__list {
+    margin-bottom: calc(55px + 0 * ((100vw - 420px) / 1280));
+  }
+}
+.pass__list p {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.pass__list p::after {
+  content: "";
+  display: block;
+  width: 47px;
+  height: 1px;
+  background-color: #28434b;
+  margin: 0 auto;
+}
+.pass__list p:last-child::after {
+  display: none;
+}
+.pass__button {
+  gap: 10px;
+}
+.pass__button-bottom {
+  max-width: 275px;
+  margin: 68px auto 0;
+  gap: 10px;
+}
+
+@media (max-width: 992px) {
+  .pass__title {
+    font-weight: 500;
+  }
+  .pass__header {
+    margin-bottom: 0;
+  }
+  .pass__slider {
+    overflow: visible !important;
+    overflow-x: hidden !important;
+    padding-top: 150px !important;
+  }
+  .pass__wrapper {
+    gap: 0;
   }
 }

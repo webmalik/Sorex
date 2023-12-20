@@ -54,7 +54,7 @@ export function prodSliderMobile() {
 				slide.classList.add('swiper-slide');
 			})
 
-			productsSwiper = new Swiper(slider, {
+			const productsSwiper = new Swiper(slider, {
 				loop: true,
 				modules: [Pagination, Navigation],
 				spaceBetween: 10,
@@ -73,6 +73,42 @@ export function prodSliderMobile() {
 		}
 	}
 }
+
+export function passSliderMobile() {
+	const slider = document.querySelector('.pass__slider');
+
+	if (slider) {
+		const wrapper = document.querySelector('.pass__wrapper');
+		const slides = document.querySelectorAll('.pass__item');
+
+		if (window.innerWidth < 992) {
+			slider.classList.add('swiper');
+			wrapper.classList.add('swiper-wrapper');
+
+			slides.forEach(slide => {
+				slide.classList.add('swiper-slide');
+			})
+
+			const passSwiper = new Swiper(slider, {
+				loop: true,
+				modules: [Pagination, Navigation],
+				spaceBetween: 10,
+				slidesPerView: 1,
+				navigation: {
+					nextEl: '.products__next',
+					prevEl: '.products__prev',
+				},
+				pagination: {
+					el: '.products__paginations',
+					clickable: true,
+					dynamicBullets: true,
+					dynamicMainBullets: 4,
+				},
+			});
+		}
+	}
+}
+
 
 export function accordion(mode = true) {
 	const accordionTriggers = document.querySelectorAll('.accordion-trigger');

@@ -1,0 +1,113 @@
+.pass {
+	@include adaptiv-value("margin-bottom", toPX(200), toPX(122), 1);
+	&__header {
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		font-weight: 600;
+		text-align: center;
+		@include adaptiv-value("margin-bottom", toPX(150), toPX(150), 1);
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 100px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		background: #fff;
+		@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
+		padding: 35px 31px;
+	}
+
+	&__image {
+		max-width: 250px;
+		margin: 0 auto;
+		margin-top: -50%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		height: 100%;
+
+		img {
+			height: auto;
+		}
+	}
+
+	&__desc {
+		font-weight: 500;
+		text-align: center;
+		@include adaptiv-value("font-size", toPX(18), toPX(18), 1);
+		@include adaptiv-value("margin-bottom", toPX(13), toPX(13), 1);
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 600;
+		text-align: center;
+		line-height: 35px;
+		@include adaptiv-value("margin-bottom", toPX(13), toPX(13), 1);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		@include adaptiv-value("margin-bottom", toPX(55), toPX(55), 1);
+		p {
+			padding-top: 10px;
+			font-size: 18px;
+			font-weight: 300;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			&::after {
+				content: "";
+				display: block;
+				width: 47px;
+				height: 1px;
+				background-color: #28434b;
+				margin: 0 auto;
+			}
+
+			&:last-child {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__button {
+		gap: 10px;
+		&-bottom {
+			max-width: 275px;
+			margin: 68px auto 0;
+			gap: 10px;
+		}
+	}
+}
+
+@include media-width($md) {
+	.pass {
+		&__title {
+			font-weight: 500;
+		}
+
+		&__header {
+			margin-bottom: 0;
+		}
+
+		&__slider {
+			overflow: visible !important;
+			overflow-x: hidden !important;
+			padding-top: 150px !important;
+		}
+		&__wrapper {
+			gap: 0;
+		}
+	}
+}
