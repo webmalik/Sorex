@@ -249,150 +249,10 @@ a {
 }
 
 @font-face {
-  font-family: "fa";
+  font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.woff2") format("woff2");
-  font-weight: brands;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.woff2") format("woff2");
-  font-weight: brands;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-duotone-900.woff") format("woff"), url("../fonts/fa-duotone-900.woff2") format("woff2");
-  font-weight: duotone;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-duotone-900.woff") format("woff"), url("../fonts/fa-duotone-900.woff2") format("woff2");
-  font-weight: duotone;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
-  font-weight: regular;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2");
-  font-weight: regular;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-regular-400.woff") format("woff"), url("../fonts/fa-sharp-regular-400.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-solid-900.woff") format("woff"), url("../fonts/fa-sharp-solid-900.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-solid-900.woff") format("woff"), url("../fonts/fa-sharp-solid-900.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
-  font-weight: solid;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-light-300.woff") format("woff"), url("../fonts/fa-sharp-light-300.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-sharp-thin-100.woff") format("woff"), url("../fonts/fa-sharp-thin-100.woff2") format("woff2");
-  font-weight: sharp;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2");
-  font-weight: solid;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-v4compatibility.woff") format("woff"), url("../fonts/fa-v4compatibility.woff2") format("woff2");
-  font-weight: v4compatibility;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-v4compatibility.woff") format("woff"), url("../fonts/fa-v4compatibility.woff2") format("woff2");
-  font-weight: v4compatibility;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
-  font-weight: thin;
+  src: url("../fonts/Poppins-300.woff") format("woff"), url("../fonts/Poppins-300.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -419,27 +279,6 @@ a {
 @font-face {
   font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/Poppins-300.woff") format("woff"), url("../fonts/Poppins-300.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  font-display: swap;
-  src: url("../fonts/Poppins-400.woff") format("woff"), url("../fonts/Poppins-400.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "fa";
-  font-display: swap;
-  src: url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.woff2") format("woff2");
-  font-weight: thin;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  font-display: swap;
   src: url("../fonts/Poppins-500.woff") format("woff"), url("../fonts/Poppins-500.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -454,22 +293,29 @@ a {
 @font-face {
   font-family: "Poppins";
   font-display: swap;
+  src: url("../fonts/Poppins-400.woff") format("woff"), url("../fonts/Poppins-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-700.woff") format("woff"), url("../fonts/Poppins-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-700.woff") format("woff"), url("../fonts/Poppins-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
   src: url("../fonts/Poppins-600.woff") format("woff"), url("../fonts/Poppins-600.woff2") format("woff2");
   font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  font-display: swap;
-  src: url("../fonts/Poppins-700.woff") format("woff"), url("../fonts/Poppins-700.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  font-display: swap;
-  src: url("../fonts/Poppins-700.woff") format("woff"), url("../fonts/Poppins-700.woff2") format("woff2");
-  font-weight: 700;
   font-style: normal;
 }
 /*
