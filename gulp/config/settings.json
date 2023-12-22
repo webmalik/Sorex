@@ -1,33 +1,4 @@
 {
-<<<<<<< HEAD
-  "projectName": "Новий проект",
-  "menuItems": [
-    {
-      "label": "Стартова сторінка",
-      "url": "/"
-    },
-    {
-      "label": "Головна",
-      "url": "/main.html"
-    },
-    {
-      "label": "Privat",
-      "url": "/privat.html"
-    },
-    {
-      "label": "Privat2",
-      "url": "/privat2.html"
-    },
-    {
-      "label": "productDetail",
-      "url": "/detail.html"
-    },
-    {
-      "label": "Bundle",
-      "url": "/bundle.html"
-    }
-  ]
-=======
 	"projectName": "Новий проект",
 	"menuItems": [
 		{
@@ -36,12 +7,23 @@
 		},
 		{
 			"label": "Головна",
-			"url": "/Sorex/main.html"
+			"url": "/main.html"
 		},
 		{
 			"label": "Privat",
-			"url": "/Sorex/privat.html"
+			"url": "/privat.html"
+		},
+		{
+			"label": "Privat2",
+			"url": "/privat2.html"
+		},
+		{
+			"label": "productDetail",
+			"url": "/detail.html"
+		},
+		{
+			"label": "Bundle",
+			"url": "/bundle.html"
 		}
 	]
->>>>>>> 6d4939c77d1b40658ae1c8b5323fa15fdf7c5aff
 }
