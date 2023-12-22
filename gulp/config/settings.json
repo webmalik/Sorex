@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "projectName": "Новий проект",
   "menuItems": [
     {
@@ -26,4 +27,21 @@
       "url": "/bundle.html"
     }
   ]
+=======
+	"projectName": "Новий проект",
+	"menuItems": [
+		{
+			"label": "Стартова сторінка",
+			"url": "/"
+		},
+		{
+			"label": "Головна",
+			"url": "/Sorex/main.html"
+		},
+		{
+			"label": "Privat",
+			"url": "/Sorex/privat.html"
+		}
+	]
+>>>>>>> 6d4939c77d1b40658ae1c8b5323fa15fdf7c5aff
 }
