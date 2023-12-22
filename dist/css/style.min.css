@@ -38575,6 +38575,14 @@ img {
     gap: 0;
   }
 }
+.warum {
+  margin-bottom: 200px;
+}
+@media (max-width: 1640px) {
+  .warum {
+    margin-bottom: calc(122px + 78 * ((100vw - 420px) / 1280));
+  }
+}
 .warum__header {
   display: flex;
   align-items: center;

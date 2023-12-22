@@ -1,4 +1,5 @@
 .warum {
+	@include adaptiv-value("margin-bottom", toPX(200), toPX(122), 1);
 	&__header {
 		display: flex;
 		align-items: center;
