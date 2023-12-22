@@ -1,17 +1,17 @@
 {
-  "projectName": "Новий проект",
-  "menuItems": [
-    {
-      "label": "Стартова сторінка",
-      "url": "/"
-    },
-    {
-      "label": "Головна",
-      "url": "/main.html"
-    },
-    {
-      "label": "Privat",
-      "url": "/privat.html"
-    }
-  ]
+	"projectName": "Новий проект",
+	"menuItems": [
+		{
+			"label": "Стартова сторінка",
+			"url": "/"
+		},
+		{
+			"label": "Головна",
+			"url": "/Sorex/main.html"
+		},
+		{
+			"label": "Privat",
+			"url": "/Sorex/privat.html"
+		}
+	]
 }
