@@ -307,5 +307,21 @@
 			display: flex;
 			flex-direction: column;
 		}
+
+		&__banner {
+			display: none;
+		}
+		&__nav {
+			display: none;
+		}
+		&__buttons {
+			ul {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				a {
+					border-radius: 25px;
+				}
+			}
+		}
 	}
 }

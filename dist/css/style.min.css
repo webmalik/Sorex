@@ -39596,4 +39596,17 @@ select {
     display: flex;
     flex-direction: column;
   }
+  .shop__banner {
+    display: none;
+  }
+  .shop__nav {
+    display: none;
+  }
+  .shop__buttons ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .shop__buttons ul a {
+    border-radius: 25px;
+  }
 }
