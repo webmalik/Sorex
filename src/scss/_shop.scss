@@ -1,0 +1,311 @@
+.shop {
+	&__buttons {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include adaptiv-value("gap", toPX(20), toPX(10), 1);
+
+			li {
+				width: 100%;
+				max-width: 275px;
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 15px;
+					width: 100%;
+					color: $black_color;
+					@include adaptiv-value("font-size", 15, 12, 1);
+				}
+			}
+		}
+	}
+
+	&__banner {
+		position: relative;
+		@include adaptiv-value("margin-top", toPX(56), toPX(40), 1);
+
+		.hero {
+			&__buttons {
+				display: flex;
+				gap: 15px;
+				justify-content: center;
+			}
+
+			&__button {
+				max-width: 275px;
+				gap: 15px;
+				width: 100%;
+			}
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		@include adaptiv-value("margin-top", toPX(66), toPX(30), 1);
+	}
+
+	&__desc {
+		@include adaptiv-value("margin-top", toPX(10), toPX(10), 1);
+		font-weight: 300;
+		@include adaptiv-value("font-size", toPX(24), toPX(20), 1);
+	}
+
+	&__nav {
+		@include adaptiv-value("margin-top", toPX(62), toPX(30), 1);
+		@include adaptiv-value("margin-bottom", toPX(80), toPX(30), 1);
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__fliter {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 15px 22px;
+
+		select {
+			padding: 15px;
+			background-color: #fff;
+			border-radius: 10px;
+			font-size: 20px;
+			font-weight: normal;
+			color: rgba($color: #222, $alpha: 0.5);
+			@include adaptiv-value("min-width", toPX(300), toPX(150), 1);
+			border: 1px solid #222;
+
+			&.active {
+				border-color: $secondary-color;
+				color: $secondary-color;
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__control {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__nav-buttons {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 17px;
+
+		a {
+			font-size: 38px;
+		}
+	}
+
+	&__fil {
+		font-weight: normal;
+		font-size: 20px;
+		span {
+			font-weight: 600;
+			font-size: 20px;
+		}
+	}
+
+	&__paginations {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		margin: 100px 0 88px;
+		a {
+			font-weight: 600;
+			font-size: 20px;
+			padding: 10px 18px;
+			border-radius: 50%;
+			opacity: 0.5;
+
+			&.active {
+				background-color: #ff9234;
+				color: #fff;
+				opacity: 1;
+			}
+		}
+	}
+}
+.shop__reverse {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr) !important;
+	@include adaptiv-value("gap", toPX(100), toPX(50), 1);
+	.shop {
+		&__item {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			background-color: #fff;
+			padding: 30px;
+			@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
+			@include adaptiv-value("margin-left", toPX(80), toPX(50), 1);
+			margin-top: 0;
+			align-self: center;
+			justify-content: center;
+		}
+
+		&__item-img {
+			@include adaptiv-value("margin-left", toPX(-80), toPX(-50), 1);
+			margin-top: 0;
+		}
+
+		&__price {
+			font-weight: 600;
+			@include adaptiv-value("font-size", toPX(30), toPX(25), 1);
+			text-align: center;
+			color: #ff9234;
+			@include adaptiv-value("margin-bottom", toPX(20), toPX(18), 1);
+			align-self: center;
+		}
+
+		&__buttons {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			align-self: center;
+		}
+
+		&__button {
+			border-color: #222;
+			color: #222;
+
+			&.active {
+				color: $white_color;
+				border-color: $secondary-color;
+			}
+		}
+	}
+	.pass {
+		&__desc {
+		}
+
+		&__title {
+		}
+
+		&__list {
+			align-self: center;
+			justify-self: center;
+			p {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				flex-direction: row;
+				justify-content: flex-start;
+				&::after {
+					display: none;
+				}
+
+				&::before {
+					content: "";
+					display: block;
+					width: 14px;
+					height: 14px;
+					background-color: #ff9134;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+.shop {
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		@include adaptiv-value("gap", toPX(100), toPX(50), 1);
+	}
+
+	&__item {
+		background-color: #fff;
+		padding: 30px;
+		@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
+		@include adaptiv-value("margin-top", toPX(80), toPX(50), 1);
+	}
+
+	&__item-img {
+		@include adaptiv-value("margin-top", toPX(-80), toPX(-50), 1);
+	}
+
+	&__price {
+		font-weight: 600;
+		@include adaptiv-value("font-size", toPX(30), toPX(25), 1);
+		text-align: center;
+		color: #ff9234;
+		@include adaptiv-value("margin-bottom", toPX(20), toPX(18), 1);
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__button {
+		border-color: #222;
+		color: #222;
+
+		&.active {
+			color: $white_color;
+			border-color: $secondary-color;
+		}
+	}
+	.pass {
+		&__desc {
+		}
+
+		&__title {
+		}
+
+		&__list {
+		}
+	}
+}
+
+.shop-banner {
+	&__img {
+		position: absolute;
+		bottom: -100px;
+		right: 150px;
+
+		img {
+			@include adaptiv-value("max-width", toPX(655), toPX(250), 1);
+		}
+	}
+
+	&__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 50%;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 50px;
+		max-width: 50%;
+		padding: 40px;
+	}
+
+	&__title {
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		font-weight: 600;
+		text-align: center;
+	}
+
+	&__label {
+		position: absolute;
+		bottom: 20px;
+		left: 50px;
+	}
+}
+@include media-width($md) {
+	.shop {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}

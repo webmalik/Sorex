@@ -1,0 +1,146 @@
+.reviews {
+	@include adaptiv-value("margin-bottom", toPX(150), toPX(27), 1);
+	&__slider {
+	}
+
+	&__wrapper {
+		@include adaptiv-value("margin-bottom", toPX(70), toPX(64), 1);
+	}
+
+	&__slide {
+		background-color: #fff;
+		padding: 55px 70px;
+		@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
+		cursor: pointer;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	&__image {
+		i.fa-user {
+			color: #fff;
+			background-color: #3f7180;
+			width: 44px;
+			height: 44px;
+			border-radius: 22px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__user-info {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	&__user-name {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-weight: 600;
+		font-size: 20px;
+
+		i {
+			color: #3f7180;
+		}
+	}
+
+	&__user-desc {
+		font-weight: 400;
+		font-size: 16px;
+		color: #828282;
+	}
+
+	&__stars {
+		@include adaptiv-value("margin-bottom", toPX(11), toPX(18), 1);
+		@include adaptiv-value("margin-top", toPX(19), toPX(18), 1);
+		i {
+			color: #fdbf01;
+			fill: #fdbf01;
+			font-size: 19px;
+		}
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 20px;
+	}
+
+	&__control {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 172px;
+	}
+
+	&__prev {
+		cursor: pointer;
+		i {
+			font-size: 40px;
+			font-weight: 200;
+		}
+	}
+
+	&__next {
+		cursor: pointer;
+		i {
+			font-size: 40px;
+			font-weight: 200;
+		}
+	}
+
+	&__paginations {
+		position: relative;
+		left: auto !important;
+		right: auto !important;
+		top: auto !important;
+		bottom: auto !important;
+		transform: none !important;
+
+		display: none;
+		justify-content: center;
+		//margin: 0 auto;
+		max-width: 175px;
+
+		.swiper-pagination-bullet {
+			width: 11px !important;
+			height: 11px !important;
+			background-color: #707070;
+
+			&-active {
+				background-color: $black_color;
+			}
+		}
+	}
+}
+.reviws {
+	&__title {
+		font-weight: 600;
+		text-align: center;
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		@include adaptiv-value("margin-bottom", toPX(47), toPX(79), 1);
+	}
+}
+
+@include media-width($md) {
+	.reviews {
+		padding: 0 15px;
+		&__paginations {
+			display: flex;
+		}
+
+		&__control {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0;
+			margin-top: 47px;
+		}
+	}
+}

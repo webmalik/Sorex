@@ -252,3 +252,10 @@ img {
 		background-color: $secondary-color;
 	}
 }
+
+input,
+select {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}

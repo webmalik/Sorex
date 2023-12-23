@@ -58,11 +58,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		z-index: 3;
 
 		svg {
 			@include adaptiv-value("font-size", 178, 126, 1);
 			color: #fff;
 			z-index: 2;
+		}
+
+		i {
+			@include adaptiv-value("font-size", toPX(178), toPX(126), 1);
+			font-weight: 200;
+			color: #fff;
 		}
 	}
 
@@ -126,6 +133,11 @@
 		&__next,
 		&__prev {
 			cursor: pointer;
+
+			i {
+				font-weight: 200;
+				font-size: 37px;
+			}
 		}
 
 		&__button {

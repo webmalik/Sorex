@@ -1,4 +1,4 @@
-import $ from "jquery";
+import $, { cssNumber } from "jquery";
 import Swiper from "swiper";
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
@@ -322,25 +322,6 @@ export function pageNav() {
 			}, 800);
 		});
 	});
-
-	function activateMenuItem() {
-		const scrollPosition = $(window).scrollTop();
-
-		headerLinks.each(function () {
-			const section = $(`${$(this).attr('href')}:first`);
-			if (
-				section.offset().top <= scrollPosition + 105 &&
-				section.offset().top + section.outerHeight() > scrollPosition + 105
-			) {
-				headerLinks.removeClass('active');
-				headerLinks.parent().removeClass('active');
-				$(this).addClass('active');
-				$(this).parent().addClass('active');
-			}
-		});
-	}
-
-	$(window).on('scroll', activateMenuItem);
 }
 
 export function inputPassword() {
@@ -375,4 +356,52 @@ export function newMob() {
 			newWrapper.classList.toggle('active');
 		});
 	}
+}
+
+export function reviewsSlider() {
+	const rev = new Swiper('.reviews__slider', {
+		loop: true,
+		modules: [Pagination, Navigation],
+		spaceBetween: 110,
+		slidesPerView: 1,
+		centeredSlides: true,
+		breakpoints: {
+			992: {
+				slidesPerView: 1.8,
+			}
+		},
+		navigation: {
+			nextEl: '.reviews__next',
+			prevEl: '.reviews__prev',
+		},
+		pagination: {
+			el: '.reviews__paginations',
+			clickable: true,
+		},
+	});
+}
+
+export function shop() {
+	const grid = document.querySelector('a.fa-grid');
+	const list = document.querySelector('a.fa-list');
+	const wrapper = document.querySelector('.shop__wrapper');
+
+	if (window.innerWidth > 992) {
+		list.addEventListener('click', (e) => {
+			e.preventDefault();
+			list.classList.add('fa-solid');
+			grid.classList.remove('fa-solid');
+			wrapper.classList.add('shop__reverse');
+		})
+		grid.addEventListener('click', (e) => {
+			e.preventDefault();
+			grid.classList.add('fa-solid');
+			list.classList.remove('fa-solid');
+			wrapper.classList.remove('shop__reverse');
+		})
+
+	} else {
+		wrapper.classList.remove('shop__reverse');
+	}
+
 }

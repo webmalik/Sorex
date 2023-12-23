@@ -24,6 +24,10 @@
 		{
 			"label": "Bundle",
 			"url": "/Sorex/bundle.html"
+		},
+		{
+			"label": "Shop",
+			"url": "/Sorex/shop.html"
 		}
 	]
 }

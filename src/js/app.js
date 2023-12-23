@@ -13,3 +13,5 @@ const households = document.querySelector('.households');
 wmFunctions.tabs(households);
 wmFunctions.pageNav();
 wmFunctions.newMob();
+wmFunctions.reviewsSlider();
+wmFunctions.shop();

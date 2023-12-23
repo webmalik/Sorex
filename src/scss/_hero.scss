@@ -28,9 +28,12 @@
 		left: 50%;
 		transform: translateX(-50%);
 		bottom: 38px;
-		font-size: 60px;
 		color: #fff;
-		font-weight: normal;
+
+		i {
+			font-size: 60px;
+			font-weight: 200;
+		}
 	}
 
 	&__text {
