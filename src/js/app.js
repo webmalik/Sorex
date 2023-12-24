@@ -6,6 +6,7 @@ wmRoot.project();
 
 wmFunctions.burgerMenu();
 wmFunctions.prodSliderMobile();
+wmFunctions.prSliderMobile();
 wmFunctions.passSliderMobile();
 
 const households = document.querySelector('.households');

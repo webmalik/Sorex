@@ -311,6 +311,7 @@
 		&__banner {
 			display: none;
 		}
+
 		&__nav {
 			display: none;
 		}
@@ -322,6 +323,13 @@
 					border-radius: 25px;
 				}
 			}
+		}
+	}
+
+	.detail {
+		.new__label {
+			top: -30px;
+			right: 0px;
 		}
 	}
 }

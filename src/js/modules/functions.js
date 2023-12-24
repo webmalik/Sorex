@@ -405,3 +405,38 @@ export function shop() {
 	}
 
 }
+
+export function prSliderMobile() {
+	const slider = document.querySelector('.prod__slider');
+
+	if (slider) {
+		const wrapper = document.querySelector('.prod__wrapper');
+		const slides = document.querySelectorAll('.prod__item');
+
+		if (window.innerWidth < 992) {
+			slider.classList.add('swiper');
+			wrapper.classList.add('swiper-wrapper');
+
+			slides.forEach(slide => {
+				slide.classList.add('swiper-slide');
+			})
+
+			const passSwiper = new Swiper(slider, {
+				loop: true,
+				modules: [Pagination, Navigation],
+				spaceBetween: 10,
+				slidesPerView: 1,
+				navigation: {
+					nextEl: '.products__next',
+					prevEl: '.products__prev',
+				},
+				pagination: {
+					el: '.products__paginations',
+					clickable: true,
+					dynamicBullets: true,
+					dynamicMainBullets: 4,
+				},
+			});
+		}
+	}
+}
