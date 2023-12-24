@@ -56,6 +56,11 @@
 		align-items: center;
 		justify-content: center;
 		@include adaptiv-value("margin-top", toPX(64), toPX(60), 1);
+
+		i {
+			color: #29434b;
+			@include adaptiv-value("font-size", toPX(60), toPX(60), 1);
+		}
 	}
 }
 

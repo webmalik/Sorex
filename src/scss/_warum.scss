@@ -51,7 +51,9 @@
 	}
 
 	&__button {
-		@include adaptiv-value("margin-top", toPX(55px), toPX(0), 1);
+		@include adaptiv-value("margin-top", toPX(55), toPX(0), 1);
+		margin-left: auto;
+		margin-right: auto;
 		max-width: 275px;
 	}
 }
