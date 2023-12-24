@@ -215,7 +215,7 @@
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		@include adaptiv-value("gap", toPX(100), toPX(50), 1);
+		@include adaptiv-value("gap", toPX(100), toPX(60), 1);
 	}
 
 	&__item {
@@ -299,6 +299,20 @@
 		position: absolute;
 		bottom: 20px;
 		left: 50px;
+	}
+}
+@include media-width(1400px) {
+	.shop {
+		&__wrapper {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+@include media-width(1100px) {
+	.shop {
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 }
 @include media-width($md) {

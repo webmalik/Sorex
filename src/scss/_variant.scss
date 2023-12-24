@@ -122,6 +122,7 @@
 	}
 
 	&__button {
+		@include adaptiv-value("max-width", toPX(275), toPX(180), 1);
 		max-width: 275px;
 		margin: 0 auto;
 	}
