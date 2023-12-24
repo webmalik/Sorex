@@ -440,3 +440,19 @@ export function prSliderMobile() {
 		}
 	}
 }
+
+export function variantSliderMobile() {
+	const slider = document.querySelector('.variant__slider');
+
+	if (slider) {
+
+		if (window.innerWidth < 992) {
+
+			const varSwiper = new Swiper(slider, {
+				loop: true,
+				spaceBetween: 10,
+				slidesPerView: 1,
+			});
+		}
+	}
+}

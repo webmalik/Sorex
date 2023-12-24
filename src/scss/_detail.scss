@@ -388,9 +388,19 @@
 	}
 
 	.detail {
+		&__photo {
+			flex-wrap: wrap;
+			gap: 5px;
+			img {
+				padding: 10px;
+				min-height: 75px;
+				max-width: 75px;
+			}
+		}
 		&__wrapper {
 			display: flex;
 			flex-direction: column;
+			gap: 20px;
 		}
 
 		&__inner {

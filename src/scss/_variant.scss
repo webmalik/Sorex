@@ -1,5 +1,5 @@
 .variant {
-	@include adaptiv-value("margin-bottom", toPX(150), toPX(90), 1);
+	@include adaptiv-value("margin-bottom", toPX(150), toPX(75), 1);
 	&__header {
 		font-weight: 600;
 		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
@@ -12,6 +12,10 @@
 	}
 	&__wrapper {
 		display: flex;
+	}
+
+	&__mobile {
+		display: none;
 	}
 
 	.table__active {
@@ -120,5 +124,101 @@
 	&__button {
 		max-width: 275px;
 		margin: 0 auto;
+	}
+}
+
+@include media-width($md) {
+	.variant {
+		display: none;
+
+		&__mobile {
+			display: block;
+			@include adaptiv-value("margin-bottom", toPX(150), toPX(75), 1);
+		}
+
+		&__icon {
+			max-width: 60px;
+			margin: 20px auto 28px;
+		}
+		&__image {
+			padding: 0 20px;
+			position: relative;
+			z-index: 2;
+			margin-top: 0;
+
+			img {
+				position: relative;
+				z-index: 2;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&__title {
+			text-align: center;
+			@include adaptiv-value("font-size", toPX(30), toPX(20), 1);
+			text-align: center;
+			font-weight: 600;
+			padding: 0 20px;
+		}
+		&__button {
+			max-width: 158px;
+			margin: 0 auto;
+			font-size: 14px;
+			font-weight: 400;
+			i {
+				font-size: 14px !important;
+			}
+		}
+		&__table {
+			position: relative;
+			z-index: 2;
+			padding-top: 120px;
+			tr {
+				position: relative;
+				z-index: 2;
+				&.line {
+					position: relative;
+
+					td {
+						border: 1px solid rgba($color: #222, $alpha: 1);
+					}
+					z-index: 4;
+
+					&::after {
+						content: "";
+						display: block;
+						border: none;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						left: 0;
+					}
+				}
+				td {
+					position: relative;
+					z-index: 1;
+					text-align: center;
+					padding: 10px 0;
+					vertical-align: middle;
+					font-size: 14px;
+					font-weight: 400;
+
+					&:first-child {
+						text-align: center;
+						min-width: auto;
+					}
+
+					i {
+						font-size: 26px;
+						text-align: center;
+					}
+
+					span {
+						font-weight: 600;
+					}
+				}
+			}
+		}
 	}
 }
