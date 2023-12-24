@@ -1,0 +1,124 @@
+.variant {
+	@include adaptiv-value("margin-bottom", toPX(150), toPX(90), 1);
+	&__header {
+		font-weight: 600;
+		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		text-align: center;
+		@include adaptiv-value("margin-bottom", toPX(100), toPX(60), 1);
+
+		span {
+			color: $secondary-color;
+		}
+	}
+	&__wrapper {
+		display: flex;
+	}
+
+	.table__active {
+		background-color: rgba($color: #a1d8e2, $alpha: 0.8);
+		border-radius: 25px;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		height: 900px;
+		width: 100%;
+		z-index: 0;
+		background-image: url("../img/types-bg.png");
+		background-repeat: no-repeat;
+		background-size: 80%;
+		background-position: top;
+	}
+
+	&__table {
+		position: relative;
+		z-index: 2;
+		tr {
+			position: relative;
+			z-index: 2;
+			&.line {
+				position: relative;
+
+				z-index: 4;
+
+				&::after {
+					content: "";
+					display: block;
+					border-bottom: 1px solid rgba($color: #222, $alpha: 0.5);
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: 0;
+				}
+			}
+			td {
+				position: relative;
+				z-index: 1;
+				text-align: center;
+				padding: 20px 0;
+				vertical-align: middle;
+				font-size: 20px;
+				font-weight: 400;
+
+				&:first-child {
+					text-align: left;
+					min-width: 200px;
+				}
+
+				i {
+					font-size: 30px;
+					text-align: center;
+				}
+
+				span {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+	&__image {
+		padding: 0 50px;
+		position: relative;
+		z-index: 2;
+		margin-top: -50px;
+
+		img {
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		@include adaptiv-value("font-size", toPX(30), toPX(24), 1);
+		text-align: center;
+		font-weight: 600;
+		padding: 0 50px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include adaptiv-value("gap", toPX(20), toPX(20), 1);
+
+		i {
+			font-size: 30px;
+			border-bottom: 1px solid rgba($color: #222, $alpha: 0.5);
+			width: 100%;
+			text-align: center;
+			@include adaptiv-value("padding-bottom", toPX(20), toPX(20), 1);
+			line-height: 30px;
+		}
+
+		p {
+			font-weight: 600;
+			@include adaptiv-value("font-size", toPX(30), toPX(24), 1);
+		}
+	}
+
+	&__button {
+		max-width: 275px;
+		margin: 0 auto;
+	}
+}
