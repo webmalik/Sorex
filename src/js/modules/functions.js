@@ -519,7 +519,7 @@ export function detailSliderMobile() {
 				slidesPerView: 1,
 				centeredSlides: true,
 				pagination: {
-					el: '.products__paginations',
+					el: '.detail__paginations',
 					clickable: true,
 				},
 			});

@@ -453,6 +453,28 @@
 	}
 
 	.detail {
+		&__paginations {
+			position: relative;
+			left: auto !important;
+			right: auto !important;
+			top: auto !important;
+			bottom: auto !important;
+			transform: none !important;
+			display: flex;
+			justify-content: center;
+			//margin: 0 auto;
+			max-width: 175px;
+
+			.swiper-pagination-bullet {
+				width: 11px !important;
+				height: 11px !important;
+				background-color: #707070;
+
+				&-active {
+					background-color: $black_color;
+				}
+			}
+		}
 		.new__view {
 			background-position: center top 50px;
 		}

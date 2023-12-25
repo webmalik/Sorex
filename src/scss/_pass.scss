@@ -102,6 +102,15 @@
 			margin-bottom: 0;
 		}
 
+		&__item {
+			display: flex !important;
+			min-height: 552px;
+		}
+
+		&__image {
+			margin-bottom: 9px;
+		}
+
 		&__slider {
 			overflow: visible !important;
 			overflow-x: hidden !important;
