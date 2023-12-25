@@ -1,19 +1,22 @@
 .main {
 	&__products {
-		@include adaptiv-value("margin-top", 128, 42, 1);
+		@include adaptiv-value("margin-top", 131.4, 39.1, 1);
 	}
 }
 .products {
 	&__header {
 		@include adaptiv-value("font-size", 105, 44, 1);
+		@include adaptiv-value("line-height", toPX(158), toPX(65), 1);
 		line-height: 120%;
 		font-weight: 600;
-		@include adaptiv-value("margin-bottom", 105, 75, 1);
+		@include adaptiv-value("margin-bottom", 86.7, 64, 1);
+		text-wrap: balance;
 
 		svg {
 			//padding-top: 15px;
 			@include adaptiv-value("max-width", 350, 150, 1);
 			@include adaptiv-value("height", toPX(75), toPX(30), 1);
+			display: inline-block;
 		}
 	}
 
@@ -76,8 +79,10 @@
 	&__title {
 		@include adaptiv-value("margin-top", toPX(34), toPX(28), 1);
 		@include adaptiv-value("font-size", 30, 21, 1);
+		@include adaptiv-value("line-height", toPX(30), toPX(46), 1);
 		color: $black_color;
 		font-weight: 600;
+		text-align: center;
 
 		span {
 			color: $secondary-color;
@@ -85,9 +90,11 @@
 	}
 
 	&__desc {
-		@include adaptiv-value("margin-bottom", toPX(44), toPX(65), 1);
-		@include adaptiv-value("margin-top", toPX(44), toPX(19), 1);
+		@include adaptiv-value("margin-bottom", toPX(37), toPX(24.6), 1);
+		@include adaptiv-value("margin-top", toPX(40), toPX(16.5), 1);
 		@include adaptiv-value("font-size", toPX(20), toPX(20), 1);
+		@include adaptiv-value("line-height", toPX(30), toPX(30), 1);
+		font-weight: 300;
 	}
 
 	&__button {
@@ -120,7 +127,18 @@
 		&__item {
 			background-color: #fff;
 			border-radius: 20px;
-			padding-bottom: 13px;
+			padding: 0 12.1px 12.9px;
+		}
+
+		&__desc {
+			padding: 0 15.4px;
+		}
+
+		&__title {
+			padding: 0;
+			line-height: 31px;
+			margin-left: -8px;
+			margin-right: -8px;
 		}
 
 		&__nav {

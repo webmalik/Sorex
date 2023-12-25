@@ -1,5 +1,5 @@
 .pass {
-	@include adaptiv-value("margin-bottom", toPX(200), toPX(122), 1);
+	@include adaptiv-value("margin-bottom", toPX(197.8), toPX(122.8), 1);
 	&__header {
 		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
 		font-weight: 600;
@@ -19,7 +19,7 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		background: #fff;
-		@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
+		@include adaptiv-value("border-radius", toPX(25), toPX(25), 1);
 		padding: 35px 31px;
 	}
 

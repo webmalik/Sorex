@@ -1,9 +1,9 @@
 .contacts {
-	@include adaptiv-value("margin-top", toPX(115), toPX(33), 1);
+	@include adaptiv-value("margin-top", toPX(114.8), toPX(33), 1);
 	@include adaptiv-value("margin-bottom", toPX(130), toPX(75), 1);
 	&__wrapper {
-		@include adaptiv-value("padding-left", toPX(253), toPX(0), 1);
-		@include adaptiv-value("padding-right", toPX(253), toPX(0), 1);
+		@include adaptiv-value("padding-left", toPX(248), toPX(0), 1);
+		@include adaptiv-value("padding-right", toPX(248), toPX(0), 1);
 	}
 
 	&__inner {
@@ -35,13 +35,11 @@
 
 	&__title {
 		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
-		font-weight: normal;
+		font-weight: 600;
 		font-style: normal;
-		text-align: left;
+		text-align: center;
 		color: #222222;
-		@include adaptiv-value("max-width", toPX(766), toPX(766), 1);
-		@include adaptiv-value("padding-left", toPX(64), toPX(44), 1);
-		@include adaptiv-value("padding-right", toPX(64), toPX(44), 1);
+		@include adaptiv-value("max-width", toPX(645), toPX(645), 1);
 		margin: 0 auto;
 	}
 
@@ -49,11 +47,10 @@
 		font-size: 20px;
 		font-weight: normal;
 		font-style: normal;
+		line-height: normal;
 		text-align: left;
 		color: #222222;
-		@include adaptiv-value("max-width", toPX(766), toPX(766), 1);
-		@include adaptiv-value("padding-left", toPX(64), toPX(10), 1);
-		@include adaptiv-value("padding-right", toPX(64), toPX(10), 1);
+		@include adaptiv-value("max-width", toPX(645), toPX(645), 1);
 		margin: 0 auto;
 		@include adaptiv-value("margin-top", toPX(9), toPX(24), 1);
 		@include adaptiv-value("margin-bottom", toPX(28), toPX(77), 1);

@@ -1,5 +1,7 @@
 .shop {
 	&__buttons {
+		@include adaptiv-value("margin-top", toPX(36), toPX(0), 1);
+		@include adaptiv-value("margin-bottom", toPX(56), toPX(35), 1);
 		ul {
 			display: flex;
 			justify-content: space-between;
@@ -24,7 +26,7 @@
 
 	&__banner {
 		position: relative;
-		@include adaptiv-value("margin-top", toPX(56), toPX(40), 1);
+		@include adaptiv-value("margin-top", toPX(56), toPX(59), 1);
 
 		.hero {
 			&__buttons {
@@ -65,15 +67,28 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 15px 22px;
 
+		span {
+			display: none;
+		}
+
 		select {
-			padding: 15px;
+			padding: 5px 38px 5px 15px;
 			background-color: #fff;
 			border-radius: 10px;
+			line-height: 30px;
 			font-size: 20px;
 			font-weight: normal;
 			color: rgba($color: #222, $alpha: 0.5);
 			@include adaptiv-value("min-width", toPX(300), toPX(150), 1);
 			border: 1px solid #222;
+			background-image: url("../img/chevron-down-2.svg");
+			background-repeat: no-repeat;
+			background-size: 50% 50%;
+			background-position: center right -50px;
+
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
 
 			&.active {
 				border-color: $secondary-color;
@@ -102,10 +117,20 @@
 
 	&__fil {
 		font-weight: normal;
-		font-size: 20px;
+		@include adaptiv-value("font-size", toPX(20), toPX(16), 1);
+
 		span {
 			font-weight: 600;
-			font-size: 20px;
+			@include adaptiv-value("font-size", toPX(20), toPX(16), 1);
+		}
+
+		select {
+			padding-left: 30px;
+			background-image: url("../img/chevron-down-2.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center left;
+			@include adaptiv-value("font-size", toPX(20), toPX(16), 1);
 		}
 	}
 
@@ -130,6 +155,9 @@
 		}
 	}
 }
+.filter__mob {
+	display: none;
+}
 .shop__reverse {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr) !important;
@@ -145,6 +173,39 @@
 			margin-top: 0;
 			align-self: center;
 			justify-content: center;
+
+			.pass {
+				&__desc {
+					display: block;
+				}
+
+				&__title {
+				}
+
+				&__list {
+					align-self: center;
+					justify-self: center;
+					p {
+						display: flex;
+						align-items: center;
+						gap: 10px;
+						flex-direction: row;
+						justify-content: flex-start;
+						&::after {
+							display: none;
+						}
+
+						&::before {
+							content: "";
+							display: block;
+							width: 14px;
+							height: 14px;
+							background-color: #ff9134;
+							border-radius: 50%;
+						}
+					}
+				}
+			}
 		}
 
 		&__item-img {
@@ -178,44 +239,13 @@
 			}
 		}
 	}
-	.pass {
-		&__desc {
-		}
-
-		&__title {
-		}
-
-		&__list {
-			align-self: center;
-			justify-self: center;
-			p {
-				display: flex;
-				align-items: center;
-				gap: 10px;
-				flex-direction: row;
-				justify-content: flex-start;
-				&::after {
-					display: none;
-				}
-
-				&::before {
-					content: "";
-					display: block;
-					width: 14px;
-					height: 14px;
-					background-color: #ff9134;
-					border-radius: 50%;
-				}
-			}
-		}
-	}
 }
 
 .shop {
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		@include adaptiv-value("gap", toPX(100), toPX(60), 1);
+		@include adaptiv-value("gap", toPX(100), toPX(26.8), 1);
 	}
 
 	&__item {
@@ -223,6 +253,18 @@
 		padding: 30px;
 		@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
 		@include adaptiv-value("margin-top", toPX(80), toPX(50), 1);
+
+		.pass {
+			&__desc {
+				display: none;
+			}
+
+			&__title {
+			}
+
+			&__list {
+			}
+		}
 	}
 
 	&__item-img {
@@ -250,16 +292,6 @@
 		&.active {
 			color: $white_color;
 			border-color: $secondary-color;
-		}
-	}
-	.pass {
-		&__desc {
-		}
-
-		&__title {
-		}
-
-		&__list {
 		}
 	}
 }
@@ -316,6 +348,20 @@
 	}
 }
 @include media-width($md) {
+	.filter__mob {
+		position: fixed;
+		right: 0;
+		top: 58%;
+		padding: 9.5px;
+		border-radius: 50%;
+		background-color: #ff9234;
+		font-size: 29px;
+		display: flex;
+		color: #fff;
+		width: 48px;
+		height: 48px;
+		z-index: 5;
+	}
 	.shop {
 		&__wrapper {
 			display: flex;
@@ -324,10 +370,56 @@
 
 		&__banner {
 			display: none;
+
+			&-mobile {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		&__paginations {
+			display: none;
 		}
 
 		&__nav {
+			display: flex;
+		}
+
+		&__nav-buttons {
 			display: none;
+		}
+		&__fliter {
+			position: fixed;
+			bottom: 40%;
+			display: flex;
+			left: 0;
+			right: 0;
+			flex-direction: column;
+			gap: 15px;
+			background-color: #a0d9e2;
+			border-radius: 10px;
+			padding: 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: all 0.5s ease-in-out;
+			z-index: 4;
+
+			&.active {
+				padding: 28px 45px 38.5px;
+				max-height: 500px;
+				transition: all 0.5s ease-in-out;
+			}
+
+			select {
+				background-position: center right -40px;
+			}
+
+			span {
+				display: block;
+				font-size: 20px;
+				@include adaptiv-value("margin-bottom", toPX(23.5), toPX(23.5), 1);
+				font-weight: 600;
+			}
 		}
 		&__buttons {
 			ul {
@@ -337,6 +429,56 @@
 					border-radius: 25px;
 				}
 			}
+		}
+	}
+
+	.shop-banner {
+		display: flex;
+		background-color: transparent;
+
+		&__img {
+			position: relative;
+			bottom: auto;
+			right: auto;
+			margin: 0 auto;
+			margin-top: -20%;
+			margin-bottom: -15px;
+
+			img {
+				@include adaptiv-value("max-width", toPX(655), toPX(250), 1);
+			}
+		}
+
+		&__content {
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			bottom: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 20px;
+			max-width: 100%;
+			padding: 0px;
+		}
+
+		&__title {
+			@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+			font-weight: 600;
+			text-align: center;
+		}
+
+		&__label {
+			position: relative;
+			bottom: auto;
+			left: auto;
+			text-align: center;
+			padding: 0 24px;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
+			margin-bottom: 75px;
 		}
 	}
 

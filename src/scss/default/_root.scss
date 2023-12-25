@@ -213,7 +213,7 @@ img {
 	display: flex;
 	align-items: center;
 	@include adaptiv-value("margin-top", toPX(119), toPX(10), 1);
-	@include adaptiv-value("margin-bottom", toPX(20), toPX(34), 1);
+	@include adaptiv-value("margin-bottom", toPX(19.6), toPX(33.9), 1);
 
 	a {
 		@include adaptiv-value("font-size", toPX(20), toPX(12), 1);

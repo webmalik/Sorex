@@ -9,6 +9,16 @@
 	<section class="detail">
 		<div class="container">
 			<div class="detail__wrapper">
+				<div class="detail__mob-footer">
+					<div class="detail__mob-prices">
+						<p>€329,90</p>
+						<span>€379,90</span>
+					</div>
+					<a href="#" class="detail__button button active">
+						<span>Jetzt bestellen</span>
+						<i class="fa-regular fa-chevron-right"></i>
+					</a>
+				</div>
 				<div class="detail__images">
 					<div class="new__label">
 						<img src="@img/new-label.png" alt="">
@@ -21,11 +31,36 @@
 							<i class="fa-light fa-mobile"></i>
 							<i class="fa-light fa-rss"></i>
 						</div>
-						<div class="new__image">
+						<div class="new__image desctop">
 							<img src="@img/type-1.png" alt="">
 						</div>
+						<div class="detail__slider swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="new__image">
+										<img src="@img/type-1.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="new__image">
+										<img src="@img/type-1.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="new__image">
+										<img src="@img/type-1.png" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="new__image">
+										<img src="@img/type-1.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="products__paginations"></div>
+						</div>
 					</div>
-					<div class="detail__photo">
+					<div class="detail__photo desctop">
 						<img src="@img/type-1.png" alt="">
 						<img src="@img/type-1.png" alt="">
 						<img src="@img/type-1.png" alt="">
@@ -36,35 +71,84 @@
 					<div class="new__title">
 						FLEX Comfort Zylinder
 					</div>
-					<div class="new__medium">
-						Öffnungsmethoden:
-					</div>
-					<div class="new__marks">
-						<div class="new__mark">
-							Fingerabdruck
+
+					<div class="detail__revers">
+						<div class="new__medium">
+							Öffnungsmethoden:
 						</div>
-						<div class="new__mark">
-							Handyöffnung
+						<div class="new__marks">
+							<div class="new__mark">
+								Fingerabdruck
+							</div>
+							<div class="new__mark">
+								Handyöffnung
+							</div>
+							<div class="new__mark">
+								RFID
+							</div>
 						</div>
-						<div class="new__mark">
-							RFID
+						<div class="detail__rate">
+							<p>4.8</p>
+							<div class="detail__stars">
+								<i class="fa fa-solid fa-star"></i>
+								<i class="fa fa-solid fa-star"></i>
+								<i class="fa fa-solid fa-star"></i>
+								<i class="fa fa-solid fa-star"></i>
+								<i class="fa fa-solid fa-star"></i>
+							</div>
+							<a href="#">7 Bewertungen</a>
 						</div>
-					</div>
-					<div class="detail__rate">
-						<p>4.8</p>
-						<div class="detail__stars">
-							<i class="fa fa-solid fa-star"></i>
-							<i class="fa fa-solid fa-star"></i>
-							<i class="fa fa-solid fa-star"></i>
-							<i class="fa fa-solid fa-star"></i>
-							<i class="fa fa-solid fa-star"></i>
-						</div>
-						<a href="#">7 Bewertungen</a>
 					</div>
 					<div class="detail__text">
 						Das Türschloss der nächsten Generation!Edles Design kombiniert mit modernster Technik. In 5 Minuten
 						montiert - an so gut
 						wie jeder Tür!
+					</div>
+					<div class="detail__description detail__description-mobile">
+						<div class="detail__desc-title">
+							<p>Technische Spezifikationen</p>
+							<i class="fa fa-thin fa-circle-plus"></i>
+							<i class="fa fa-thin fa-circle-minus"></i>
+						</div>
+						<div class="detail__desc-wrapper">
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>Benötigtes Dornmaß</p>
+								<span>mind. 36mm – <a href="#">passt es auf meine Tür? <i class="fa fa-chevron-right"></i></a>
+								</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+							<div class="detail__desc-item">
+								<p>App</p>
+								<span>iOS und/oder Android</span>
+							</div>
+						</div>
 					</div>
 					<div class="detail__label-bold">
 						<i class="fa fa-solid fa-circle-check"></i>
@@ -83,16 +167,23 @@
 						<i class="fa fa-solid fa-truck-fast"></i>
 						<span>Kostenlose Lieferung in 3 Werktagen</span>
 					</div>
-					<div class="detail__colors">
-						<i class="fa fa-palette"></i>
-						<input type="radio" id="black" name="color">
-						<label for="black">
-							<span style="background-color: #222;"></span>
-						</label>
-						<input type="radio" checked id="white" name="color">
-						<label for="white">
-							<span style="background-color: #F4F4F4;"></span>
-						</label>
+					<div class="detail__col">
+						<div class="detail__colors">
+							<i class="fa fa-thin fa-palette"></i>
+							<input type="radio" id="black" name="color">
+							<label for="black">
+								<span style="background-color: #222;"></span>
+							</label>
+							<input type="radio" checked id="white" name="color">
+							<label for="white">
+								<span style="background-color: #F4F4F4;"></span>
+							</label>
+						</div>
+						<div class="detail__count detail__count-mobile">
+							<a href="#"><i class="fa fa-solid fa-circle-minus"></i></a>
+							<p>1</p>
+							<a href="#"><i class="fa fa-solid fa-circle-plus"></i></a>
+						</div>
 					</div>
 					<div class="new__buttons">
 						<a href="#" class="new__button button active">
@@ -105,22 +196,24 @@
 					<div class="detail__hilfe-title">
 						Sie benötigen Hilfe?
 					</div>
-					<a href="#" class="detail__button button active">
-						<span>Passt das Schloss?</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
-					<a href="#" class="detail__button button">
-						<span>Montageanleitung</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
-					<a href="#" class="detail__button button">
-						<span>Bedienungsanleitung</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
-					<a href="#" class="detail__button button">
-						<span>kostenlose Unterstützung</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
+					<div class="hilfe__wrapper">
+						<a href="#" class="detail__button button active">
+							<span>Passt das Schloss?</span>
+							<i class="fa-regular fa-chevron-right"></i>
+						</a>
+						<a href="#" class="detail__button button">
+							<span>Montageanleitung</span>
+							<i class="fa-regular fa-chevron-right"></i>
+						</a>
+						<a href="#" class="detail__button button">
+							<span>Bedienungsanleitung</span>
+							<i class="fa-regular fa-chevron-right"></i>
+						</a>
+						<a href="#" class="detail__button button">
+							<span>kostenlose Unterstützung</span>
+							<i class="fa-regular fa-chevron-right"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="derail__icons">
@@ -200,106 +293,66 @@
 			</div>
 		</div>
 	</section>
-	<section class="warum">
+	<section class="warum ">
 		<div class="container">
-			<div class="warum__item">
+			<div class="warum__item revers">
 				<div class="warum__image">
 					<img src="@img/warum-1.png" alt="">
 				</div>
 				<div class="warum__content">
 					<div class="warum__title">
-						Nie wieder vor <span>
-							verschlossenen <br>
-							Türen
-						</span>sitzen.
+						In <span>5 Minuten</span> montiert - <br>
+						an so gut wie jeder Tür.
+
 					</div>
 					<div class="warum__text">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-						deleniti atque corrupti
-						quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-						culpa qui officia
-						deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-						distinctio.
+						Unser FLEX COMFORT Zylinder ist in 5 Minuten montiert - Sie müssen dafür lediglich eine Schraube
+						lösen! Und dank der
+						einzigartigen Längenanpassung und dem kleinsten Knauf am Markt passt unser Zylinder auch für wirklich
+						so gut wie alle
+						Türmaße.
+
+						<ul>
+							<li>Lorem ipsum</li>
+							<li>Dolor sit amet</li>
+							<li>Lorem ipsum</li>
+						</ul>
 					</div>
-					<a href="#" class="warum__button button active">
-						<span>Türschlösser</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
 				</div>
 			</div>
-			<div class="warum__item">
+			<div class="warum__item revers pl">
 				<div class="warum__image">
-					<img src="@img/warum-2.png" alt="">
+					<img src="@img/war-2.png" alt="">
 				</div>
 				<div class="warum__content">
 					<div class="warum__title">
-						Nie wieder vor <span>
-							verschlossenen <br>
-							Türen
-						</span>sitzen.
+						Alles immer im Blick - <br>
+						auch <span>von unterwegs.</span>
+
 					</div>
 					<div class="warum__text">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-						deleniti atque corrupti
-						quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-						culpa qui officia
-						deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-						distinctio.
+						Mit dem im Bundle mitgelieferten <br>
+						<a href="#">SOREX NET Gateway</a> können Sie Ihren FLEX COMFORT Zylinder auch von unterwegs öffnen
+						oder verwalten.
+						Ganz bequem und
+						modern mit unserer SOREX SmartLock App.
 					</div>
-					<a href="#" class="warum__button button active">
-						<span>Türschlösser</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
 				</div>
 			</div>
-			<div class="warum__item">
+			<div class="warum__item revers pl-2">
 				<div class="warum__image">
-					<img src="@img/warum-3.png" alt="">
+					<img src="@img/war-3.png" alt="">
 				</div>
 				<div class="warum__content">
 					<div class="warum__title">
-						Nie wieder vor <span>
-							verschlossenen <br>
-							Türen
-						</span>sitzen.
+						<span>Praktisch & einfach</span><br>
+						für Ihr Zuhause
+
 					</div>
 					<div class="warum__text">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-						deleniti atque corrupti
-						quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-						culpa qui officia
-						deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-						distinctio.
+						Der kleine blaue Chip zum Entsperren von RFID fähigen Schlösser. Basiert auf dem Mifare classic 13,56
+						Mhz Standard.
 					</div>
-					<a href="#" class="warum__button button active">
-						<span>Türschlösser</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
-				</div>
-			</div>
-			<div class="warum__item">
-				<div class="warum__image">
-					<img src="@img/warum-4.png" alt="">
-				</div>
-				<div class="warum__content">
-					<div class="warum__title">
-						Nie wieder vor <span>
-							verschlossenen <br>
-							Türen
-						</span>sitzen.
-					</div>
-					<div class="warum__text">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-						deleniti atque corrupti
-						quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-						culpa qui officia
-						deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-						distinctio.
-					</div>
-					<a href="#" class="warum__button button active">
-						<span>Türschlösser</span>
-						<i class="fa-regular fa-chevron-right"></i>
-					</a>
 				</div>
 			</div>
 		</div>

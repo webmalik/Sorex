@@ -17,3 +17,7 @@ wmFunctions.pageNav();
 wmFunctions.newMob();
 wmFunctions.reviewsSlider();
 wmFunctions.shop();
+wmFunctions.filterButton();
+wmFunctions.hilfeBlock();
+wmFunctions.techBlock();
+wmFunctions.detailSliderMobile();

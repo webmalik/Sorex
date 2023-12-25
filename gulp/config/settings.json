@@ -1,5 +1,5 @@
 {
-	"projectName": "Новий проект",
+	"projectName": "Sorex",
 	"menuItems": [
 		{
 			"label": "Стартова сторінка",
@@ -10,15 +10,15 @@
 			"url": "/Sorex/main.html"
 		},
 		{
-			"label": "Privat",
+			"label": "Приват",
 			"url": "/Sorex/privat.html"
 		},
 		{
-			"label": "Privat2",
+			"label": "Приват 2",
 			"url": "/Sorex/privat2.html"
 		},
 		{
-			"label": "productDetail",
+			"label": "Продукт",
 			"url": "/Sorex/detail.html"
 		},
 		{

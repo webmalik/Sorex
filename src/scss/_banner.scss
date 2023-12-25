@@ -39,6 +39,7 @@
 		font-weight: 300;
 		font-style: normal;
 		text-align: left;
+		@include adaptiv-value("line-height", toPX(30), toPX(30), 1);
 		color: #222222;
 		@include adaptiv-value("margin-top", toPX(17), toPX(7), 1);
 		@include adaptiv-value("margin-bottom", toPX(38), toPX(33), 1);
@@ -46,6 +47,7 @@
 
 	&__button {
 		gap: 10px !important;
+		max-width: 275px;
 	}
 
 	&__image {
@@ -78,6 +80,9 @@
 
 		&__text {
 			text-wrap: balance;
+		}
+		&__button {
+			@include adaptiv-value("max-width", toPX(275), toPX(500), 1);
 		}
 	}
 }

@@ -12,6 +12,8 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		@include adaptiv-value("gap", toPX(26), toPX(12), 1);
+		max-width: 1434.41px;
+		margin: 0 auto;
 	}
 
 	&__button {

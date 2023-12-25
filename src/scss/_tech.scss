@@ -1,5 +1,5 @@
 .tech {
-	@include adaptiv-value("margin-top", toPX(178), toPX(50), 1);
+	@include adaptiv-value("margin-top", toPX(178.7), toPX(49.3), 1);
 
 	&__label {
 		position: absolute;
@@ -57,13 +57,14 @@
 		@include adaptiv-value("font-size", toPX(20), toPX(20), 1);
 		color: #fff;
 		font-weight: 300;
-		margin: 28px 0 62px 0;
+		@include adaptiv-value("margin-top", toPX(25), toPX(21.9), 1);
+		@include adaptiv-value("margin-bottom", toPX(25.8), toPX(56), 1);
 	}
 
 	&__buttons {
 		display: flex;
-		gap: 14px;
-		max-width: 568px;
+		@include adaptiv-value("gap", toPX(14.2), toPX(10.9), 1);
+		max-width: 569px;
 	}
 
 	&__button {

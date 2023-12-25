@@ -1,12 +1,12 @@
 .types {
-	@include adaptiv-value("margin-top", toPX(169), toPX(30), 1);
+	@include adaptiv-value("margin-top", toPX(170), toPX(29.7), 1);
 
 	&__header {
 		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
 		font-weight: 600;
 		color: $black_color;
 		text-align: center;
-		@include adaptiv-value("margin-bottom", toPX(75), toPX(30), 1);
+		@include adaptiv-value("margin-bottom", toPX(70.2), toPX(21), 1);
 
 		span {
 			color: $secondary-color;
@@ -64,7 +64,7 @@
 		font-weight: 600;
 		color: $black_color;
 		@include adaptiv-value("margin-top", toPX(75), toPX(26), 1);
-		@include adaptiv-value("margin-bottom", toPX(28), toPX(10), 1);
+		@include adaptiv-value("margin-bottom", toPX(27.6), toPX(7.9), 1);
 		text-align: center;
 	}
 

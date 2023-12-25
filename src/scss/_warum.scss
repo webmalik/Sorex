@@ -20,6 +20,24 @@
 		@include adaptiv-value("gap", toPX(150), toPX(30), 1);
 		@include adaptiv-value("margin-top", toPX(50), toPX(130), 1);
 
+		&.revers {
+			flex-direction: row-reverse;
+
+			&:nth-child(2n-1) {
+				flex-direction: row;
+			}
+		}
+
+		&.pl {
+			.warum__content {
+				@include adaptiv-value("padding-left", toPX(100), toPX(0), 1);
+			}
+		}
+		&.pl-2 {
+			.warum__content {
+				@include adaptiv-value("padding-left", toPX(100), toPX(0), 1);
+			}
+		}
 		&:nth-child(2n-1) {
 			flex-direction: row-reverse;
 		}
@@ -33,12 +51,13 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		@include adaptiv-value("gap", toPX(45), toPX(30), 1);
 	}
 
 	&__title {
 		@include adaptiv-value("font-size", toPX(40), toPX(30), 1);
+		@include adaptiv-value("margin-bottom", toPX(45), toPX(30), 1);
 		font-weight: 600;
+		@include adaptiv-value("line-height", toPX(60), toPX(46), 1);
 
 		span {
 			color: $secondary-color;
@@ -48,11 +67,44 @@
 	&__text {
 		font-size: 20px;
 		font-weight: 300;
+		line-height: 30px;
+
+		a {
+			color: $secondary-color;
+			text-decoration: underline;
+		}
+
+		ul {
+			list-style-type: none;
+			display: flex;
+			flex-direction: column;
+			@include adaptiv-value("margin-top", toPX(85.9), toPX(30.1), 1);
+			width: 100%;
+			gap: 27px;
+			li {
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 30px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 15px;
+
+				&::before {
+					content: "";
+					display: block;
+					width: 14px;
+					height: 14px;
+					border-radius: 50%;
+					background-color: $secondary-color;
+				}
+			}
+		}
 	}
 
 	&__button {
-		@include adaptiv-value("margin-top", toPX(55), toPX(0), 1);
-		margin-left: auto;
+		@include adaptiv-value("margin-top", toPX(102), toPX(30), 1);
+		margin-left: 0;
 		margin-right: auto;
 		max-width: 275px;
 	}
@@ -66,10 +118,21 @@
 			&:nth-child(2n-1) {
 				flex-direction: column;
 			}
+
+			&.revers {
+				flex-direction: column;
+
+				&:nth-child(2n-1) {
+					flex-direction: column;
+				}
+			}
 		}
 
 		&__title {
 			text-align: center;
+			br {
+				display: none;
+			}
 		}
 		&__text {
 			text-align: left;
