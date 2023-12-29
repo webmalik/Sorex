@@ -79,7 +79,7 @@
 	&__title {
 		@include adaptiv-value("margin-top", toPX(34), toPX(28), 1);
 		@include adaptiv-value("font-size", 30, 21, 1);
-		@include adaptiv-value("line-height", toPX(30), toPX(46), 1);
+		@include adaptiv-value("line-height", toPX(35), toPX(46), 1);
 		color: $black_color;
 		font-weight: 600;
 		text-align: center;

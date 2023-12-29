@@ -72443,7 +72443,7 @@ select {
 .products__title {
   margin-top: 34px;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 35px;
   color: #222222;
   font-weight: 600;
   text-align: center;
@@ -72460,7 +72460,7 @@ select {
 }
 @media (max-width: 1640px) {
   .products__title {
-    line-height: calc(46px + -16 * ((100vw - 390px) / 1280));
+    line-height: calc(46px + -11 * ((100vw - 390px) / 1280));
   }
 }
 .products__title span {
