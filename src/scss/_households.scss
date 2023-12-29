@@ -19,6 +19,7 @@
 	&__button {
 		border-color: $black_color;
 		color: $black_color;
+		gap: 10px;
 		@include adaptiv-value("font-size", toPX(20), toPX(12), 1);
 		@include adaptiv-value("line-height", toPX(30), toPX(18), 1);
 	}

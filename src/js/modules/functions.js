@@ -386,9 +386,16 @@ export function shop() {
 	const list = document.querySelector('a.fa-list');
 	const wrapper = document.querySelector('.shop__wrapper');
 
+	const close = document.querySelector('.shop-banner__close');
+	const banner = document.querySelector('.shop__banner');
+
 	if (wrapper) {
 
 		if (window.innerWidth > 992) {
+			close.addEventListener('click', (e) => {
+				e.preventDefault();
+				banner.style.display = "none";
+			})
 			list.addEventListener('click', (e) => {
 				e.preventDefault();
 				list.classList.add('fa-solid');

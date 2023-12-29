@@ -10,6 +10,7 @@
 		display: flex;
 		align-items: center;
 		overflow: hidden;
+		@include adaptiv-value("border-radius", toPX(25), toPX(10), 1);
 
 		img {
 			height: 100%;

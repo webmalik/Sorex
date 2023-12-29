@@ -66,6 +66,8 @@
 	}
 
 	&__social {
+		margin-left: 0;
+		margin-right: auto;
 	}
 
 	&__title {
@@ -114,6 +116,10 @@
 	.footer {
 		&__mobile {
 			display: flex;
+		}
+		&__social {
+			margin-left: auto;
+			margin-right: auto;
 		}
 		&__desctop {
 			display: none;

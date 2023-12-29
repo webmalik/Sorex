@@ -132,16 +132,17 @@
 		@include adaptiv-value("padding-right", toPX(130), toPX(0), 1);
 		.new__image {
 			margin-left: -40px;
+			margin-top: 120px;
 		}
 		display: flex;
 		flex-direction: column;
 		@include adaptiv-value("gap", toPX(60), toPX(20), 1);
 
 		.new__label {
-			top: 40px;
-			right: 100px;
+			top: 0px;
+			right: 20px;
 
-			@include adaptiv-value("max-width", toPX(125.8), toPX(80), 1);
+			@include adaptiv-value("max-width", toPX(176), toPX(80), 1);
 		}
 	}
 

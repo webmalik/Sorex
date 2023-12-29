@@ -47,6 +47,7 @@
 		@include adaptiv-value("font-size", toPX(24), toPX(20), 1);
 		font-weight: 300;
 		color: $black_color;
+		padding-top: 50px;
 	}
 
 	&__button {

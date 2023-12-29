@@ -16,6 +16,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@include adaptiv-value("gap", toPX(237), toPX(-100), 1);
 	}
 
 	&__item {
@@ -91,6 +92,10 @@
 	.prod {
 		&__label {
 			display: none;
+		}
+
+		&__wrapper {
+			gap: 0;
 		}
 	}
 }
